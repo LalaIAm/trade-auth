@@ -1,4 +1,4 @@
-import * as jwt from 'jsonwebtoken' 
+import jwt from 'jsonwebtoken' 
 
 const HASURA_GRAPHQL_JWT_SECRET = {
   type: process.env.HASURA_JWT_SECRET_TYPE || 'HS256',
