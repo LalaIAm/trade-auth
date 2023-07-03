@@ -1,8 +1,8 @@
 import express from 'express';
 import bcrypt from 'bcrypt';
 import { gql } from 'graphql-request';
-import { client } from './client';
-import { generateJWT } from './jwt';
+import { client } from './client.js';
+import { generateJWT } from './jwt.js';
 
 const app = express();
 const port = process.env.PORT || 3000;
