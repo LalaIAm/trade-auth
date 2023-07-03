@@ -20,7 +20,5 @@ export function generateJWT(params) {
             ...params.otherClaims
         }
     }
-    return jwt.sign(payload, HASURA_GRAPHQL_JWT_SECRET.key, JWT_CONFIG, (err, token) => {
-        return token;
-    })
+    return jwt.sign(payload, HASURA_GRAPHQL_JWT_SECRET.key, JWT_CONFIG)
 }
